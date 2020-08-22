@@ -3,23 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Akhan Names</title>
-  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
   </head>
   <body>
-<div class="container">
-  <div class="card jumbotron">
-  <h1>AKAN NAMES</h1>
-  <p >This application takes a user's birthday and calculates the day of the week they were born & depending on their gender outputs their Akan Name. In Ghana, children are given their first name(Akan name) according to the day in the week they were born.</p>
-</div>
+    <div class="container">
+      <div class="card jumbotron">
+      <h1>AKAN NAMES</h1>
+      <p >This application takes a user's birthday and calculates the day of the week they were born & depending on their gender outputs their Akan Name. In Ghana, children are given their first name(Akan name) according to the day in the week they were born.</p>
+    </div>
+
 <div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-4 jumbotron card">
-					<p>Here are some Akan Names, Take a step to get yours too!:</p>
-					<div class="row">
-						<div class="col-md-6">
-							<h4>Male:</h4>
-							<ul>
-								<li>Sunday: Kwasi</li>
+    <div class="col-md-2"></div>
+    <div class="col-md-4 jumbotron card">
+		  <p>Here are some Akan Names, Take a step to get yours too!:</p>
+			  <div class="row">
+				  <div class="col-md-6">
+					  <h4>Male:</h4>
+						  <ul>
+							  <li>Sunday: Kwasi</li>
 								<li>Monday: Kwadwo</li>
 								<li>Tuesday: Kwabena</li>
 								<li>Wednesday: Kwaku</li>
@@ -27,70 +28,57 @@
 								<li>Friday: Kofi</li>
 								<li>Saturday: Kwame</li>
 							</ul>
-						</div>
-						<div class="col-md-6">
-							<h4>Female:</h4>
-							<ul>
-								<li>Sunday: Akosua</li>
-								<li>Monday: Adwoa</li>
-								<li>Tuesday: Abenaa</li>
-								<li>Wednesday: Akua</li>
-								<li>Thursday:  Yaa</li>
-								<li>Friday: Afua</li>
-								<li>Saturday: Ama</li>
-							</ul>
-						</div>
-					</div>
-			</div>
+				</div>
+        <div class="col-md-6">
+				  <h4>Female:</h4>
+					  <ul>
+						  <li>Sunday: Akosua</li>
+							<li>Monday: Adwoa</li>
+							<li>Tuesday: Abenaa</li>
+							<li>Wednesday: Akua</li>
+							<li>Thursday:  Yaa</li>
+							<li>Friday: Afua</li>
+							<li>Saturday: Ama</li>
+						</ul>
+				</div>
+		</div>
+	</div>
 
-      <div class="col-md-4 jumbotron card">
-      				<h5> Enter Your Birthday:</h5>
-      					<form>
-      						<div class="#">
-      			              	<label class="label">Birthday</label>
-      			               	<div class="#">
-      				                <input type="text" placeholder="mm/dd/yyyy" id="myBirthDate" class="form-control" autocomplete="off">
-      				             </div>
-      			         </div>
+  <div class="col-md-4 jumbotron card">
+    <h5> Enter Your Birthday:</h5>
+      <form>
+         <div class="#">
+      	    <label class="label">Birthday</label>
+      		   <div class="#">
+      			   <input type="text" placeholder="mm/dd/yyyy" id="myBirthDate" class="form-control" autocomplete="off">
+      		 	</div>
+       	</div>
+         <div class="#">
+ 			     <label class="label">Gender</label>
+ 			       <div class="#">
+ 		           <input type="radio" name="gender" id="male" value="Male">
+ 						 	<label for="male">Male</label>
+ 					 	</div>
+ 		         <div class="#">
+ 		           <input type="radio" name="gender" value="Female" id="female">
+ 		           <label for="female">Female</label>
+ 		         </div>
+ 			   </div>
+         <button type="submit" onclick="getAkanName(); return false;" class="btn btn-primary btn-xs" aria-hidden="true">Get Akan Name</button>
+			 	<button type="reset" onclick="clearAkanMessage(); return false;" class="btn btn-default btn-xs">Cancel</button>
+      </form>
 
-                     <div class="#">
- 			              	<label class="label">Gender</label>
- 			               	<div class="#">
- 		                        <input type="radio" name="gender" id="male" value="Male">
- 														<label for="male">Male</label>
- 												</div>
- 		                    <div class="#">
- 		                        <input type="radio" name="gender" value="Female" id="female">
- 		                        <label for="female">Female</label>
- 		                     </div>
- 			            </div>
-
-
-
-                  <button type="submit" onclick="getAkanName(); return false;" class="btn btn-primary btn-xs" aria-hidden="true">Get Akan Name</button>
-									<button type="reset" onclick="clearAkanMessage(); return false;" class="btn btn-default btn-xs">Cancel</button>
-
-
-                </form>
-
-                <div class="card">
-        					<p id="message" class="output"></p>
-        				</div>
-              </div>
-
-
-
-
-</div>
-
-<div class="col-md-2"></div>
+      <div class="card">
+        <p id="message" class="output"></p>
+      </div>
+    </div>
   </div>
-
+  <div class="col-md-2"></div>
 </div>
+
 <script src="jquery-3.5.1.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 
-
-  </body>
+</body>
 </html>
